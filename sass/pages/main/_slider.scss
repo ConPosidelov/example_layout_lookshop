@@ -1,0 +1,287 @@
+
+/* ======= slider ======================================================= */
+
+
+.bg-head_slider{
+    display: none;
+    @extend %bg-width;
+    
+}
+
+
+/* ======= pad  =================================================== */
+
+@media only screen and (min-width: $phone_brake){
+
+    .bg-head_slider{
+        
+        display: block;
+        margin-top: 20px;
+        height: 402px;
+        .slide { 
+            width: 100%;
+            //height: 150px;
+
+            .carousel-indicators { 
+                transition: 1s linear;
+                bottom: -44px;
+                .active { 
+                    border-color: $red-color;
+                    background-color: $red-color;
+                }
+
+                li { 
+                    border-color: $gray-color;
+                    background-color: $gray-color;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 10px;
+                    margin: 10px;       
+                }
+            }
+
+            .carousel-inner { 
+                width: 100%;
+                height: 345px;
+                z-index: -2;
+                .active { 
+
+                    .carousel-caption { 
+                        
+                        img { 
+
+                        }
+                    }
+                }
+
+                .item { 
+                     width: 100%;
+                     height: 100%;
+                    .carousel-caption { 
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                        padding: 0;
+                        top: 0;
+                        left: 0;
+                        img { 
+                            
+                        }
+                    }
+                }
+            }
+
+            .carousel-control { 
+                background-image: none;
+                opacity: 1;
+                color: $black-color;
+                .glyphicon { 
+                    color: $black-color;
+                    
+                    font-size: 20px;
+                    &:after{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        //left: -2px;
+                        top: -43px;
+                        width: 30px;
+                        height: 110px;
+                        background-color: $wite-color;
+                        opacity: 0.7;
+                    }
+                    transition: 0.6s ease-out;
+                    &:hover{
+                        color: $red-color;
+                        transition: 0.6s ease-out;
+                    }
+                }
+            }
+
+            .left{
+                left: -6%;
+                z-index: 2;
+
+                .glyphicon{
+                    &:after{
+                       left: -2px 
+                    }
+                }
+
+                
+            }
+            .right{
+                right: 0;
+                z-index: 2;
+                .glyphicon {
+                    right: 15px;
+                    &:after{
+                        
+                        //left: -7px;
+                        //right: 0px;
+                        top: -43px;
+                        width: 30px;
+                        height: 110px;
+                        
+                    }
+                    &:before{
+                        padding-left: 5px;
+                    }
+
+                }
+            }
+
+            .title{
+                width: 260px;
+                height: 190px;
+                position: absolute;
+                top: 70px;
+                //left: 9%;
+                margin-left: 10%;
+                background:url('../images/Crazy.png')#{$center};
+                background-size: 230px 190px;
+                z-index: 0;
+
+                .button_shop{
+                    display: block;
+                    width: 116px;
+                    height: 40px;
+
+                    margin-top: 170px;
+                    margin-left: 76px;
+
+                    background-color: #ffa687;
+                    -webkit-box-shadow: 0 3px #dd6b44;
+                    -moz-box-shadow: 0 3px #dd6b44;
+                    box-shadow: 0 3px #dd6b44;
+
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-size: 13px;
+                    padding-top: 15px;
+                    padding-left: 10px;
+                    transition: 0.6s ease-out;
+                    &:before{
+                        content: "\f0da";
+                        font-family: $icon-font4;
+                        font-size: 11px;
+                        display: block;
+                        float: right;
+                        margin-right: 5px;
+                        margin-top: 1px;
+                        width: 15px;
+                        height: 15px;
+                    }
+
+                    &:hover{
+                        
+                        //color: $red-color;
+                        transition: 0.6s ease-out;
+                    }
+                }
+
+            }
+
+
+
+        }
+
+ 
+
+
+
+    }
+
+
+    
+}
+
+
+
+@media only screen and (min-width: $pad_brake){
+
+    .bg-head_slider{
+        
+        margin-top: 110px;
+        height: 517px;
+        .slide { 
+
+             .carousel-indicators { 
+                
+                bottom: -54px;
+            }
+            .carousel-inner { 
+                
+                height: 435px;
+                
+                .item { 
+                   .carousel-caption { 
+                      img { 
+                            
+                        }
+                    }
+                }
+            }
+
+            .carousel-control { 
+                .glyphicon { 
+                    font-size: 100%;
+                    &:after{
+                        left: 0px;
+                        top: -43px;
+                        width: 32px;
+                    }
+
+                }
+            }
+
+            .right{
+                right: 0;
+               .glyphicon {
+                    &:after{
+                       left: -2px;
+                        top: -43px;
+                        width: 32px;
+                    }
+
+                }
+            }
+
+            .title{
+                width: 360px;
+                height: 290px;
+                top: 48px;
+                //left: 9%;
+                margin-left: 13%;
+                background-size: 350px 290px;
+               .button_shop{
+                   width: 156px;
+                    height: 54px;
+                    background-color: #ffa687;
+                    -webkit-box-shadow: 0 3px #dd6b44;
+                    -moz-box-shadow: 0 3px #dd6b44;
+                    box-shadow: 0 3px #dd6b44;
+
+                    margin-top: 256px;
+                    margin-left: 100px;
+                   
+                    font-size: 16px;
+                    padding-top: 19px;
+                    padding-left: 20px;
+
+                    &:before{
+                        font-size: 15px;
+                        margin-right: 10px;
+                        margin-top: 1px;
+                        width: 15px;
+                        height: 15px;
+                    }
+
+                }
+
+            }
+
+
+        }
+    }
+}

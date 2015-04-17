@@ -1,0 +1,151 @@
+/* ======= brands ======================================================= */
+
+.l-brands{
+    display: none;
+    .brands_list{
+               
+        
+    }
+}
+
+@media only screen and (min-width: $phone_brake){
+    .l-brands{
+        display: block;
+        width: 100%;
+        height: 110px;
+        margin-top: 60px;
+        border-bottom: 1px solid $gray-color;
+         &:after{
+                content: '';
+                display: block;
+                width: 37%;
+                height: 1px;
+                float: right;
+                margin-top: -78px;
+                background-color:$gray-color;
+            }
+
+            &:before{
+                content: '';
+                display: block;
+                width: 37%;
+                height: 1px;
+                margin-top: 7px;
+                float: left;
+                background-color:$gray-color;
+            }
+
+        h2{
+            height: 15px;
+            width: 160px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            text-transform: uppercase;
+            color: $black-color;
+            font-size: 15px;
+            line-height: 1;
+    
+        }
+        .brands_list{
+            display: block;
+            max-width: $in-width_dec;
+            margin-left: auto;
+            margin-right: auto;
+            //height: 80px;
+            margin-top: 10px;
+            //background-color: $red-color;
+            li{
+                float: left;
+                display: block;
+                height: 60px;
+                width: 16.66%;
+               
+                
+            }
+            
+             @for $i from 1 through 8 {
+
+              li:nth-of-type(#{$i}){
+                    
+                   background:url('../images/brands/br#{$i}.png')#{$center};
+                   background-size: 60%; 
+               }
+            }
+
+            li:nth-of-type(2){
+                background-size: 50%;                
+            }
+
+
+            li:nth-of-type(7){
+                display: none;                
+            }
+            li:nth-of-type(8){
+                display: none;                
+            }
+
+
+        }
+
+       
+    }
+
+
+
+}
+
+@media only screen and (min-width: $pad_brake){
+    .l-brands{
+         &:after{
+            width: 39%;
+         }
+
+         &:before{
+            width: 39%;
+         }
+
+        .brands_list{
+            li{
+               width: 12.5%;
+               background-size: 70%; 
+            }
+            @for $i from 1 through 8 {
+
+              li:nth-of-type(#{$i}){
+                    
+                    background-size: 80px;
+               }
+            }
+            li:nth-of-type(2){
+                background-size: 60px;                
+            }
+            li:nth-of-type(3){
+                background-size: 70px;                
+            }
+
+            li:nth-of-type(7){
+                display: block;                
+            }
+            li:nth-of-type(8){
+                display: block;                
+            }
+        }
+    }
+
+
+
+    
+}
+
+@media only screen and (min-width: 960px){
+    .l-brands{
+         &:after{
+            width: 41%;
+         }
+
+         &:before{
+            width: 41%;
+         }
+     }
+ }

@@ -1,0 +1,511 @@
+/* ======= custom ======================================================= */
+
+.bg-custom { 
+    @extend %bg-width;
+    //background: $wite-color;
+    
+    .l-custom { 
+        //@include container;
+        @extend %inner-width;
+        .care { 
+            width: 100%;
+            height: 96px;
+
+            font-size: 30px;
+            text-transform:uppercase;
+            text-align: center;
+            line-height: 96px;
+        }
+
+        .tools { 
+            width: 100%;
+            //width: auto;
+            height: 96px;
+            background: $black-color;
+            #currency_form { 
+                width: 25%;
+                //width: 160px;
+                float: left;
+                display: block;
+
+
+                //display: none;
+                height: 100%;
+                transition: 1.6s ease-out;
+                .select { 
+                   // display: none;
+                    height: 100%;
+                     width: 100%;
+                     text-transform:uppercase;
+                     //background: $black-color;
+                     text-decoration: none;
+                     color: $wite-color;
+                     transition: 0.6s ease-out;
+                    a{
+                        display: block;
+                        //float: left;
+                        line-height: 96px;
+                        width: 100%;
+                        height: 100%;
+                        padding-left: 10px;
+                        border-right: 1px solid $gray-color;
+                        color: $wite-color;
+                        font-size: 30px;
+                        text-decoration: none;
+                        transition: 0.6s ease-out;
+                        &:after{
+                            display: block;
+                            float: right;
+                            margin-right: 15px;
+                            
+                            line-height: 80px;
+                            content: "\f0dd";
+                            font-family: $icon-font4;
+                            font-size: 35px;
+
+                            color: $wite-color;
+                            
+                        }
+                        transition: 0.4s ease-out;
+                        &:hover{
+                           color: $red-color;
+                           transition: 0.4s ease-out;
+                       
+                        }
+                        &:hover:after{
+                            color: $red-color;
+                        } 
+
+
+                    }
+                    ul{
+                        //display: block;
+                        display: none;
+                        width: 100%;
+                                            
+                        position: relative;
+                        z-index: 5;
+
+                        -webkit-box-shadow: 0px 20px 24px 0px rgba(45, 50, 50, 0.75);
+                        -moz-box-shadow:    0px 20px 24px 0px rgba(45, 50, 50, 0.75);
+                        box-shadow:         0px 20px 24px 0px rgba(45, 50, 50, 0.75);
+
+                        li{
+                            display: block;
+                            width: 100%;
+                            height: 96px;
+                                                          
+                            padding-left: 20px;
+                            line-height: 96px;
+                            font-size: 30px;
+                            background: $black-color;
+                            color: $wite-color;
+                            &:hover{
+                                color: $red-color;
+                                cursor: pointer;
+                            }
+                            
+                        }
+                    }
+                    .active{ 
+                        background: $gray-color;
+                        transition: 0.4s ease-out;
+                    }
+
+                }
+
+               
+            }
+            .acc{
+
+                display: block;
+
+
+
+                //display: none;
+                //width: 59%;
+                width: auto;
+                height: 100%;
+                
+                float: left;
+                 transition: 1.6s ease-out 0.6s;
+                a{
+                    display: block;
+                   // width: 265px;
+                    width: auto;
+                    height: 100%;
+                    //margin-left: auto;
+                    //margin-right: auto;
+                    padding-left: 40px;
+                    //padding-right: 20px;
+                    transition: 1.6s ease-out 0.6s;
+                    .account { 
+                        display: block;
+                        float: left;
+                        height: 100%;
+                        
+                        line-height: 96px;
+                        font-size: 30px;
+                        color: $wite-color;
+                        text-transform: uppercase;
+                        transition: 0.8s ease-out 0.6s;
+                        &:before{
+                            display: block;
+                            float: left;
+                            margin-right: 15px;
+                            width: 45px;
+                            height: 100%;
+
+                             content: "";
+                             background: url('../images/icon-phone/User.png') #{$center};
+                            background-size: auto;
+                            transition: 0.8s ease-out 0.6s;
+                        }
+                       
+
+
+                    }
+                    //transition: 0.8s ease-out;
+                    &:hover{
+                        transition: 0.8s ease-out;
+                        .account {
+                         color: $red-color;
+                         transition: 0.5s ease-out;
+                         }
+                    } 
+                }
+             }
+
+            #search_form{
+                display: block;
+                float: right;
+                //width: 16%;
+                
+                width: auto;
+                height: 100%;
+                border-left: 1px solid $gray-color;
+                border-right: 1px solid $gray-color;
+
+                transition: 2.6s ease-out;
+                
+                transition: border-right 0s;
+                
+                .search { 
+                    display: block;
+                    width: 102px;
+                    float: right;
+                    //width: 100%;
+                    height: 100%;
+                    transition: 0.6s ease-out;
+                    background: url('../images/icon-phone/search.png') #{$center};
+                    background-size: auto;
+                }
+
+                #search_inp{
+                    display: block;
+                    float: left;
+                    width: 0;
+                    height: 100%;
+                    border: 0;
+                    padding: 0;
+                    background: $black-color;
+                    line-height: 96px;
+                    font-size: 30px;
+
+                    transition: 0.6s ease-out;
+                    
+                    
+                }
+
+                .submit_search{
+                    display: block;
+                    float: right;
+                    width: 0;
+                    height: 100%;
+                    border: 0;
+                    padding: 0;
+                    background: url('../images/icon-phone/search.png') #{$center};
+                    background-size: auto;
+                    transition: 0.6s ease-out;
+                }
+
+            }
+ 
+        }
+
+        .active{
+             #currency_form {
+                //display: none;
+                width: 0;
+                transition: 0.3s ease-out;
+                .select{
+                    a{
+                        font-size: 0;
+                        border-right: none;
+                        transition: 0s ease-out;
+                    }
+                }
+                
+            }
+             .acc{
+                //display: none;
+                width: 0;
+                transition: 0s ease-out;
+                a{
+                    padding: 0;
+                    transition: 0s ease-out;
+                    .account{
+                        font-size: 0;
+                        transition: 0s ease-out;
+                        &:before{
+                            width: 0;
+                            transition: 0s ease-out;
+                        }
+                    }
+                }
+               
+            }
+
+             #search_form{
+                //width: 100%;
+                width: auto;
+                 transition: 0.1s ease-out; 
+                border-left: none;
+                  
+                .search { 
+                   //width: 16%;
+                   //width: 102px;
+                   transition: 0.6s ease-out;    
+                }
+
+                #search_inp{
+                   //width: 84%;
+                   width: 460px;
+                    padding-left: 50px;
+                    border-right: 1px solid $gray-color;
+                    transition: 0.6s ease-out;
+                    
+                }
+
+               .submit_search{
+                    width: 0;
+                    transition: 0.6s ease-out;
+                }
+
+            }
+
+        }
+
+        .active1{
+
+             #currency_form {
+                display: none;
+                width: 0;
+            }
+             .acc{
+                display: none;
+                width: 0;
+            }
+            #search_form{
+                 width: 100%;
+                
+                 transition: 0.6s ease-out;   
+                .search { 
+                   width: 0;
+                   transition: 0.6s ease-out;    
+                }
+                #search_inp{
+                    width: 84%;
+                    
+                    padding-left: 50px;
+                    border-right: 1px solid $gray-color;
+                    transition: 0.6s ease-out;
+                }
+               
+               .submit_search{
+                    width: 16%;
+                    transition: 0.6s ease-out;
+
+                }
+
+            }
+
+        }
+
+
+
+    }
+}
+@media only screen and (min-width: $phone_brake){
+    .bg-custom {
+        background: $black-color;
+        height: 40px;
+        .l-custom{
+            width: 96%;
+            margin: 0 auto;
+            
+            .care { 
+                width: 160px;
+                float: left;
+                background: $black-color;
+                color: $wite-color;
+                font-size: 11px;
+                font-weight: bold;
+                //height: 30px;
+                //line-height: 30px;
+                height: 40px;
+                line-height: 40px;
+                text-align: left;
+            }
+            .tools {
+                width: auto;
+                height: 40px;
+                float: right;
+                border-left: 1px solid $gray-color;
+
+                #currency_form { 
+                    width: 60px;
+                    .select { 
+                       
+                        a{
+                            line-height: 40px;
+                            padding-left: 6px;
+                            font-size: 11px;
+                            font-weight: bold;
+                            &:after{
+                                margin-right: 5px;
+                                line-height: 35px;
+                                font-size: 15px;
+
+                             }
+                         
+
+                        }
+                        ul{
+                            li{
+                                height: 40px;                 
+                                padding-left: 10px;
+                                line-height: 40px;
+                                font-size: 11px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+
+                .acc{
+                    width: auto;
+                    a{
+                        width: auto;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                       .account { 
+                            line-height: 40px;
+                            font-size: 11px;
+                            font-weight: bold;
+                            &:before{
+                                margin-right: 7px;
+                                width: 22px;
+                               background-size: 60%;
+                            }
+                        }
+                    }
+                 }
+                
+
+                 #search_form{
+                    width: auto;
+                    .search { 
+                       background-size: 40%;
+                       width: 40px;
+                    }
+
+                    #search_inp{
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: $wite-color;
+                        line-height: 40px;
+                    }
+
+                    .submit_search{
+                        background-size: 40%;
+                        
+                    }
+
+                }
+               
+            }
+
+            .active{
+                 #currency_form {
+                    display: block;
+                    .select{
+                        a{
+                            //font-size: 0;
+                            border-right: 1px solid $gray-color;
+                            //transition: 0s ease-out;
+                        }
+                    }
+                }
+                .acc{
+                    display: block;
+
+                }
+
+                #search_form{
+                    width: auto;
+                    border-left:  1px solid $gray-color;
+                    .search { 
+                       width: 40px;
+                       
+                    }
+
+                    #search_inp{
+                        width: 210px;
+                        padding-left: 20px;
+                        color: $wite-color;
+                    }
+
+                    .submit_search{
+                        width: 0;
+                    }
+
+                }
+
+            }
+
+            .active1{
+                #currency_form {
+                    display: block;
+
+                }
+                .acc{
+                    display: block;
+
+                }
+                #search_form{
+                    width: auto;   
+                    .search { 
+                       width: 0;
+                           
+                    }
+                     #search_inp{
+                        width: 210px;
+                        padding-left: 20px;
+                        color: $wite-color;
+                    }
+
+                   
+                   .submit_search{
+                        width: 40px;
+
+                    }
+
+                }
+
+            }
+        }
+    }
+
+}
+

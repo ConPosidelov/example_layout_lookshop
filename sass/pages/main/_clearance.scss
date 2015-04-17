@@ -1,0 +1,348 @@
+/* ======= clearance ======================================================= */
+
+.l-clearance{
+    @extend %inner-width;
+
+   
+    margin-top: 25px;
+    height: 705px;
+    .l-clearance_lable{
+        width: 100%;
+        height: 160px;
+        padding-top: 80px;
+        background:transparent url(../images/icon-phone/off.png) no-repeat center center ;
+        background-size: auto;
+
+        &:before{
+            display: block;
+            content: '';
+            width: 35%;
+            height: 1px;
+            background: $gray-color;
+            float: left;
+
+        }
+        &:after{
+            display: block;
+            content: '';
+            width: 35%;
+            height: 1px;
+            background: $gray-color;
+            float: right;
+
+        }
+    }
+
+    .l-clearance_goods{
+        margin-top: 25px;
+        .clearance_wagon_list{
+            width: 594px;
+            margin-right: auto;
+            margin-left: auto;
+            .clearance_wagon{
+                width: 267px;
+                height: 520px;
+                float: left;
+                position: relative;
+                margin-left: 15px;
+                margin-right: 15px;
+                background: $cream-color;
+                img{
+                    height: 90%;
+                }
+
+                .sale_marker {
+                    display: none; 
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                                                   
+                    z-index: 1;
+                    border-right: solid 25px $wite-color;
+                    border-bottom: solid 25px $wite-color;
+                    border-left: solid 25px $gray-color;
+                    border-top: solid 25px $gray-color;
+
+                    &:before{
+                        display: block;
+                        content: 'sale';
+                        color: $wite-color;
+                        text-transform: uppercase;
+                        font-size: 9px;
+
+                        height: 10px;
+                        position: absolute;
+                        top: -18px;
+                        left: -20px;
+                        z-index:2;
+                    }
+                }
+                .sale{
+                    display: block;
+                }
+
+
+                .shop_it { 
+                    display: block;
+                    width: 136px;
+                    height: 136px;
+                    position: absolute;
+                    top: 22%;
+                    left: 50%;
+                    margin-left: -68px;
+                        
+                    border-radius: 136px;
+                    background:$gray-color url(../images/icon-dec/shop_it.png) no-repeat center 40% ;
+
+                    padding-top: 78px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    text-align: center;
+                    font-size: 12px;
+                    color: $wite-color;
+
+                    opacity: 0;
+                    transition: 0.6s ease-out;
+                }
+
+                        
+                .info { 
+                    height: 164px;
+                    width: 100%;
+                    background: $cream-color;
+                    position: absolute;
+                    bottom: 0;
+                    z-index: 3;
+                    .title {
+                        width: 100%;
+                        height: 18px;
+                        line-height: 18px;
+                        font-size: 18px; 
+                        margin-top: 12px;
+                        text-transform: uppercase;
+                        text-align: center;
+                        color: $black-color;
+                    }
+
+                    .price { 
+                        width: 100%;
+                        height: 28px;
+                        line-height: 28px;
+                        font-size: 28px;
+                        margin-top: 12px;
+                        text-transform: uppercase;
+                        text-align: center;
+                        color: $black-color;
+                    }
+
+                    .addcart_btn { 
+                        display: block;
+                        width: 210px;
+                        height: 57px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: 12px;
+                        text-transform: uppercase;
+                        padding-left: 20px;
+                        padding-right: 15px;
+                        font-size: 20px;
+                        line-height: 57px;
+                        color: $wite-color;
+                        background: $red-color;
+
+                        -webkit-box-shadow: 0 8px #dd6b44;
+                        -moz-box-shadow: 0 8px #dd6b44;
+                        box-shadow: 0 8px #dd6b44;
+                        border: none;
+
+                                    
+                        &:before{
+                            display: block;
+                            float: left;
+                            content: 'add to cart'; 
+                        }
+
+                        &:after{
+                            display: block;
+                            float: right;
+                            font-size: 34px;
+                            font-weight: 700;
+                            content: '+';
+
+                        }
+                        transition: 0.6s ease-out;
+                        &:hover{
+                            background: $red-hover_color;
+                           transition: 0.6s ease-out;
+                        }
+
+                    }
+                }
+
+                &:hover{
+                    transition: 0.6s ease-out;
+                    .shop_it{
+                        opacity: 1;
+                        transition: 0.6s ease-out;
+                    }
+                }
+
+             -webkit-box-shadow: 0px 20px 24px 0px rgba(45, 50, 50, 0.75);
+             -moz-box-shadow:    0px 20px 24px 0px rgba(45, 50, 50, 0.75);
+             box-shadow:         0px 20px 24px 0px rgba(45, 50, 50, 0.75);
+
+
+            }
+            .clearance_wagon:nth-of-type(2){
+                display: none;
+            }
+            .clearance_wagon:nth-of-type(3){
+                display: none;
+            }
+            .clearance_wagon:nth-of-type(4){
+                float: right;
+                margin-left: none;
+            }
+            
+             
+
+        }
+
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: $phone_brake){
+    .l-clearance{
+       height: 580px;
+
+        .l-clearance_goods{
+            margin-top: 25px;
+            .clearance_wagon_list{
+                width: 645px;
+                .clearance_wagon{
+                    //width: 220px;
+                    width: 185px;
+                    height: 396px;
+                    
+
+
+                    .info { 
+                        height: 100px;
+                        width: 100%;
+                        background: $wite-color;
+                        position: absolute;
+                        bottom: 0;
+                        z-index: 3;
+                        .title {
+                            width: 100%;
+                            height: 12px;
+                            line-height: 12px;
+                            font-size: 12px; 
+                            margin-top: 8px;
+                           text-transform: uppercase;
+                            text-align: center;
+                        }
+
+                        .price { 
+                            width: 100%;
+                            height: 20px;
+                            line-height: 20px;
+                            font-size: 20px;
+                            margin-top: 8px;
+                            text-transform: uppercase;
+                            text-align: center;
+                        }
+
+                        .addcart_btn { 
+                            display: block;
+                            width: 120px;
+                            height: 30px;
+                            margin-left: auto;
+                            margin-right: auto;
+                            margin-top: 8px;
+                            text-transform: uppercase;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            font-size: 12px;
+                            line-height: 30px;
+                            color: $wite-color;
+                            background: $red-color;
+                                    
+                            &:before{
+                                display: block;
+                                float: left;
+                                content: 'add to cart'; 
+                            }
+
+                            &:after{
+                                display: block;
+                                float: right;
+                                font-size: 20px;
+                                font-weight: 700;
+                                content: '+';
+
+                            }
+                        }
+
+                    }
+
+
+
+                }
+
+                .clearance_wagon:nth-of-type(2){
+                    display: block;
+                }
+
+
+            } 
+        }
+
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: $pad_brake){
+    .l-clearance{
+       .l-clearance_lable{ 
+             &:before{
+                width: 38%;
+            }
+            &:after{
+                width: 38%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 876px){
+    .l-clearance{
+       
+        .l-clearance_goods{
+            margin-top: 25px;
+            .clearance_wagon_list{
+                width: 860px;
+                .clearance_wagon:nth-of-type(3){
+                    display: block;
+
+                }
+            }
+        }
+        
+    }
+}

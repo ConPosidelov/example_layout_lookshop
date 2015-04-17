@@ -1,0 +1,61 @@
+
+/* ======= we_accept ======================================================= */
+
+.bg-we_accept{
+    display: none;
+    @extend %bg-width;
+    .l-we_accept{
+
+        span{
+
+        }
+
+        .card_list{
+
+            li{
+
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: $phone_brake){
+    .bg-we_accept{
+        display: block;
+        margin-top: 30px;
+        height: 60px;
+        padding-top: 19px;
+        
+        background-color: $gray_lite1old-color;
+        .l-we_accept{
+             width: 580px;
+             height: 22px;
+            
+            margin-left: auto;
+            margin-right: auto;
+            span{
+                display: block;
+                float: left;
+                
+                height: 100%;
+                line-height: 22px;
+                font-size: 14px;
+            }
+
+            .card_list{
+                display: block;
+                width: 495px;
+                height: 100%;
+                float: right;
+                background:url('../images/cards/cards.png')#{$center};
+                background-size: auto;
+                
+
+
+            }
+        }
+
+    }
+}
+

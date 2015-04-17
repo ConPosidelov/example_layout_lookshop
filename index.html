@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>verst-2</title>
+     <!-- Mobile Specific Meta -->
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+     <meta content="width=640, initial-scale=0.47, maximum-scale=1.0, user-scalable=1" name="viewport">
+	 <!--<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>-->  
+        <!-- Stylesheets -->
+	<link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+	<!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <!--<script type="text/javascript" src="js/lib/jquery.onepage-scroll.js"></script>
+    <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>-->
+        
+
+	<link href="css/style.css" rel="stylesheet" media="screen">
+
+	<script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+	<!--<script src="js/lib/jquery.mousewheel.js"></script>		
+	<script src="js/lib/simplr-smoothscroll.js"></script>-->
+    <script src="js/lib/jquery.resizestop.js"></script>
+
+    <!--<script src="js/lib/jquery-ui.min.js"></script>-->
+</head>
+
+
+
+<body>
+
+
+<div class="width_monitor"></div>
+<div class="phone_monitor"></div>
+<!--================== custom ========================================== -->
+<!-- begin bg-custom  -------------------------------- -->
+<div id="s1" class="bg-custom">
+  
+   <div class="l-custom">
+        <div class="care">
+            custom care:
+            <span id="custom_care ">123 456 789</span>
+        </div>
+        <div class="tools">
+            
+            <form action="/" id="currency_form">
+           
+                <div class="select">
+                    <a href="javascript:void(0);" class="slct">$ US</a>
+                    <ul class="drop">
+                        <li>$ US</li>
+                        <li>&#8364; eur</li>
+                        <li>&#163; gbp</li>
+                        
+                    </ul>
+                    <input type="hidden" id="currency_inp">
+                   <!-- <input type="hidden" id="currency_inp" onchange="document.getElementById("currency_form").submit();">-->
+                </div>
+                
+            </form>
+
+            <div class="acc">
+                <a href="#" ><span class="account">my account</span></a>
+            </div>
+<!--================== search_form ==================================== -->            
+            <form action="/" id="search_form">
+                <a href="javascript:void(0);" class="search"></a>
+                <input type="text" id="search_inp" name="search" placeholder="What are you looking for ...">
+                <button class="submit_search" type="submit"></button>
+            </form>
+            
+        </div>
+             
+   </div>
+    
+</div>
+
+<!-- end custom -----------------------------  -->
+
+<!-- ======================= nav ================================================== -->
+<!-- begin bg-nav  -------------------------------- -->
+<div id="s2" class="bg-nav ">
+    <div class="l-nav">
+
+       <div class="logo_line">
+            <a href="#" class="logo"></a>
+           
+           <div class="cart_blk">
+
+                <form action="/" id="cart_form">
+           
+                   <div class="select_input">
+                        
+                       <input type="text" id="card_id_inp" placeholder="Your Cart">
+                       <div class="slct1"></div>
+
+                       <ul class="drop_inp">
+                           <li>0005444444</li>
+                           <li>0003333333</li>
+                           <li>0005555555</li>
+                           
+                       </ul>
+                                         
+                   </div>
+              
+               </form>
+            
+               <div class="shopping_cart">
+                   <span></span>
+                   <span id="amount">2222</span>
+                   <span id="namber_of_goods">12</span>
+               </div>
+           </div>
+       </div>
+
+        <div class="navblk">
+            <div class="nav_menu drop_menu"></div>
+            <ul class="nav_list drop_blk">
+                <li>
+                    
+                    <ul class="subnav_list drop_blk">
+                        <li><a href="#" class="subnav_it">bag</a></li>
+                        <li><a href="#" class="subnav_it">dress</a></li>
+                        <li><a href="#" class="subnav_it">jacket</a></li>
+                        <li><a href="#" class="subnav_it">hat</a></li>
+                        <li><a href="#" class="subnav_it">shoes</a></li>
+                    </ul>
+                    <div class="nav_it drop_menu ">new</div>
+
+                </li>
+                <li>
+                    
+                     <ul class="subnav_list drop_blk">
+                        <li><a href="#" class="subnav_it">sweater</a></li>
+                        <li><a href="#" class="subnav_it">dress</a></li>
+                        <li><a href="#" class="subnav_it">hat</a></li>
+                        <li><a href="#" class="subnav_it">bag</a></li>
+                        <li><a href="#" class="subnav_it">jeans</a></li>
+                    </ul>
+                    <div  class="nav_it drop_menu">designers</div>
+
+                </li>
+                <li>
+                    
+                    <ul class="subnav_list drop_blk">
+                        <li><a href="#" class="subnav_it">dress</a></li>
+                        <li><a href="#" class="subnav_it">jacket</a></li>
+                        <li><a href="#" class="subnav_it">bag</a></li>
+                        <li><a href="#" class="subnav_it">shoes</a></li>
+                        <li><a href="#" class="subnav_it">jeans</a></li>
+                    </ul>
+                    <div  class="nav_it drop_menu">women</div>
+                </li>
+                <li>
+                    
+                    <ul class="subnav_list drop_blk">
+                        <li><a href="#" class="subnav_it">jacket</a></li>
+                        <li><a href="#" class="subnav_it">jeans</a></li>
+                        <li><a href="#" class="subnav_it">bag</a></li>
+                        <li><a href="#" class="subnav_it">shoes</a></li>
+                        <li><a href="#" class="subnav_it">sweater</a></li>
+                    </ul>
+                    <div  class="nav_it drop_menu">men</div>
+                </li>
+                <li>
+                    
+                    <ul class="subnav_list drop_blk">
+                        <li><a href="#" class="subnav_it">dress</a></li>
+                        <li><a href="#" class="subnav_it">jacket</a></li>
+                        <li><a href="#" class="subnav_it">sweater</a></li>
+                        <li><a href="#" class="subnav_it">shoes</a></li>
+                        <li><a href="#" class="subnav_it">bag</a></li>
+                        
+                    </ul>
+                    <div  class="nav_it drop_menu">clearance</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- end bg-nav ---------------------------------------->
+
+<!--========================================================================= -->
+<!-- begin bg-head_slider ---------------------------- -->
+<div id="s3" class="bg-head_slider">
+
+    <div id="carous" class="carousel slide" data-pause="true">
+                  <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carous" data-slide-to="0" class="active"></li>
+            <li data-target="#carous" data-slide-to="1"></li>
+            <li data-target="#carous" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides --> 
+        <div class="carousel-inner">
+
+            <div class="item active"><div class="carousel-caption"><img src="images/carusel/slide1.jpg" width="100%" height="100%"  alt=""></div></div>
+
+            <div class="item"><div class="carousel-caption"><img src="images/carusel/slide2.jpg" width="100%" height="100%" alt=""></div></div>
+
+            <div class="item"><div class="carousel-caption"><img src="images/carusel/slide3.jpg" width="100%" height="100%"  alt=""></div></div>
+
+            <div class="item"><div class="carousel-caption"><img src="images/carusel/slide4.jpg" width="100%" height="100%"  alt=""></div></div>
+
+            <div class="item"><div class="carousel-caption"><img src="images/carusel/slide5.jpg" width="100%" height="100%"  alt=""></div></div>
+
+        </div>   
+            <!-- Controls -->
+        <a class="left carousel-control" href="#carous" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+
+        <a class="right carousel-control" href="#carous" data-slide="next">
+           <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+
+        <div class="title">
+            <a href="#" class="button_shop">shop now</a>
+        </div>
+
+    </div>
+</div>     
+
+
+
+<!-- end bg-head_slider --------------------------------->
+
+<!--========================================================================= -->
+<!-- begin bg-contact_line  --------------------------- -->
+
+<div id="s4" class="bg-contact_line">
+
+    <div class="l-contact_line">
+        <div class="mail-group">
+            <span>Stay updated</span>
+            <form action="/" id="mail_form">
+                <input type="text" name="email" placeholder="Your email address">
+                <button class="submit_mail" type="submit"></button>
+            </form>
+        </div>
+        <div class="find_us-group">
+            <span>Find us here</span>
+            <a href="#" class="social ir">facebook</a>
+            <a href="#" class="social ir">twitter</a>
+            <a href="#" class="social ir">pinterest</a>
+        </div>
+    </div>
+
+    
+</div>
+<!-- end bg-contact_line ------------------------------->
+
+<!--========================================================================= -->
+<!-- begin bg-content  -->
+<div id="s6" class="bg-content">
+
+
+<!-- begin l-best_banner -------------------------------- -->
+    <div class="l-banner">
+       <div class="banner_inner">
+           <div class="banner_left">
+               <img src="images/banner/left_img.jpg" width="100%"   alt="">
+           </div>
+           <div class="banner_right">
+               <div class="right_top">
+                   <img src="images/banner/summer.jpg" width="100%"   alt="">
+                   <a href="#" class="summer_button"></a>
+               </div>
+               <div class="right_down">
+                   <div class="best_sellers">
+                       <img src="images/banner/best_sellers.jpg" width="100%"   alt="">
+                       <a href="#" class="best_button"></a>
+                   </div>
+                   <div class="fall_leather">
+                        <img src="images/banner/fall_leather.jpg" width="100%"   alt="">
+                       <a href="#" class="button_shop_small">shop now</a>
+                   </div>
+               </div>
+           </div>
+
+
+       </div>
+
+    </div>
+<!-- end l-best_banner ---------------------------------- -->
+
+<!-- begin shop_main -------------------------------- -->
+    <div class="l-shop_main">
+       <div class="menu_blk">
+
+           <div class="in-menu_blk">
+                <span>whats hot?</span>
+                <div  id="down_button" class="down_button"></div>
+               <div class="left_options">
+                   
+                   <a class="shop_left_menu active" href="#down_button">whats hot?</a>
+                   <a class="shop_left_menu" href="#down_button">designers</a>
+                   <a class="shop_left_menu" href="#down_button">featured</a>
+                   <a class="shop_left_menu" href="#down_button">latest</a>
+
+                </div>
+                <div class="right_options">
+                   <div class="ca-nav">
+                       <span class="ca-nav-prev"></span>
+                       <span class="ca-nav-next"></span>
+                   </div>
+               </div>
+               
+           </div>
+
+       </div>
+
+      <div class="train">
+
+       <div id="ca-container" class="ca-container">
+
+           <div class="wagon_list ca-wrapper">
+                
+               <div class="ca-item ca-item-1">
+                   <div class="wagon">
+                       <img src="images/goods/dress1.jpg" width="100%" height="100%"  alt="">
+                       <div class="sale_marker"></div>
+                       <a href="#" class="shop_it">shop it</a>
+                       <div class="info">
+                           <div class="title">WishVitalise Dress</div>
+                           <div class="price">$55.99</div>
+                           <a href="#" class="addcart_btn"></a>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="ca-item ca-item-2">
+                   <div class="wagon">
+                        <img src="images/goods/dress2.jpg" width="100%" height="100%"  alt="">
+                       <div class="sale_marker sale"></div>
+                       <a href="#" class="shop_it">shop it</a>
+                       <div class="info">
+                           <div class="title">MIMOSA LACE DRESS</div>
+                           <div class="price">$76.95</div>
+                           <a href="#" class="addcart_btn"></a>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="ca-item ca-item-3">
+                   <div class="wagon">
+                       <img src="images/goods/dress3.jpg" width="100%" height="100%" alt="">
+                       <div class="sale_marker"></div>
+                       <a href="#" class="shop_it">shop it</a>
+                       <div class="info">
+                           <div class="title">petrol sweater</div>
+                           <div class="price">$21.50</div>
+                           <a href="#" class="addcart_btn"></a>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="ca-item ca-item-4">
+                   <div class="wagon">
+                        <img src="images/goods/dress4.jpg"  width="100%" height="100%" alt="">
+                       <div class="sale_marker sale"></div>
+                       <a href="#" class="shop_it">shop it</a>
+                       <div class="info">
+                           <div class="title">MIMOSA LACE DRESS</div>
+                           <div class="price">$76.95</div>
+                           <a href="#" class="addcart_btn"></a>
+                       </div>
+                   </div>
+               </div>
+
+                <div class="ca-item ca-item-5">
+                   <div class="wagon">
+                        <img src="images/goods/dress5.jpg"  width="100%" height="100%" alt="">
+                       <div class="sale_marker"></div>
+                       <a href="#" class="shop_it">shop it</a>
+                       <div class="info">
+                           <div class="title">NADIA DRESS</div>
+                           <div class="price">$64.95</div>
+                           <a href="#" class="addcart_btn"></a>
+                       </div>
+                   </div>
+                </div>
+
+
+                <div class="ca-item ca-item-6">
+                   <div class="wagon">
+                        <img src="images/goods/dress6.jpg"  width="100%" height="100%"  alt="">
+                       <div class="sale_marker sale"></div>
+                       <a href="#" class="shop_it">shop it</a>
+                       <div class="info">
+                           <div class="title">MIMOSA LACE DRESS</div>
+                           <div class="price">$76</div>
+                           <a href="#" class="addcart_btn"></a>
+                       </div>
+                   </div>
+                </div>
+
+
+                <div class="ca-item ca-item-7">
+                   <div class="wagon">
+                        <img src="images/goods/blouse1.jpg"  width="100%" height="100%" alt="">
+                       <div class="sale_marker"></div>
+                       <a href="#" class="shop_it">shop it</a>
+                       <div class="info">
+                           <div class="title">SOFI BLOUSE</div>
+                           <div class="price">$26.95</div>
+                           <a href="#" class="addcart_btn"></a>
+                       </div>
+                   </div>
+                </div>
+
+
+                <div class="ca-item ca-item-8">
+                   <div class="wagon">
+                       <img src="images/goods/tank1.jpg"  width="100%" height="100%" alt="">
+                       <div class="sale_marker sale"></div>
+                       <a href="#" class="shop_it">shop it</a>
+                       <div class="info">
+                           <div class="title">MIMOSA LACE DRESS</div>
+                           <div class="price">$76.95</div>
+                           <a href="#" class="addcart_btn"></a>
+                       </div>
+                   </div> 
+                </div>
+
+           </div>
+       </div>
+       </div>
+
+    </div>
+<!-- end shop_main ---------------------------------- -->
+
+
+<!-- begin clearance -------------------------------- -->
+    <div class="l-clearance">
+       <div class="l-clearance_lable"></div>
+       <div class="l-clearance_goods">
+           <div class="clearance_wagon_list">
+
+               <div class="clearance_wagon">
+                   <img src="images/goods/bag1.jpg"  width="100%" height="100%" alt="">
+                   <div class="sale_marker sale"></div>
+                   <a href="#" class="shop_it">shop it</a>
+                   <div class="info">
+                      <div class="title">MIMOSA LACE DRESS</div>
+                      <div class="price">$76.95</div>
+                      <a href="#" class="addcart_btn"></a>
+                   </div>
+
+               </div>
+
+               <div class="clearance_wagon">
+                   <img src="images/goods/blouse1.jpg"  width="100%" height="100%" alt="">
+                   <div class="sale_marker "></div>
+                   <a href="#" class="shop_it">shop it</a>
+                   <div class="info">
+                      <div class="title">MIMOSA LACE DRESS</div>
+                      <div class="price">$76.95</div>
+                      <a href="#" class="addcart_btn"></a>
+                   </div>
+
+               </div>
+
+               <div class="clearance_wagon">
+                   <img src="images/goods/shorts2.jpg"  width="100%" height="100%" alt="">
+                   <div class="sale_marker sale"></div>
+                   <a href="#" class="shop_it">shop it</a>
+                   <div class="info">
+                      <div class="title">MIMOSA LACE DRESS</div>
+                      <div class="price">$76.95</div>
+                      <a href="#" class="addcart_btn"></a>
+                   </div>
+
+               </div>
+
+               <div class="clearance_wagon">
+                   <img src="images/goods/bag2.jpg"  width="100%" height="100%" alt="">
+                   <div class="sale_marker"></div>
+                   <a href="#" class="shop_it">shop it</a>
+                   <div class="info">
+                      <div class="title">MIMOSA LACE DRESS</div>
+                      <div class="price">$76.95</div>
+                      <a href="#" class="addcart_btn"></a>
+                   </div>
+
+               </div> 
+
+           </div>
+
+       </div> 
+    </div>
+<!-- end clearance ---------------------------------- -->
+
+
+<!-- begin l-brands -------------------------------- -->
+    <div class="l-brands">
+        <h2>favourite brands</h2>
+       <ul class="brands_list">
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+       </ul>
+    </div>
+<!-- end l-brands ---------------------------------- -->
+
+
+
+<!-- begin l-about_shop -------------------------------- -->
+    <div class="l-about_shop">
+       <h2>About LookShop</h2>
+       This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.
+
+    </div>
+<!-- end l-about_shop ---------------------------------- -->
+
+
+
+
+</div>
+<!-- end bg-content -------------------------------->
+
+<!--========================================================================= -->
+<!-- begin bg-we_accept ------------------------------>
+<div id="s7" class="bg-we_accept">
+ 
+    <div class="l-we_accept">
+         <span>We accept</span>
+         <div class="card_list">
+         
+         </div>
+        
+    </div>
+
+</div>
+<!-- end bg-we_accept -------------------------------->
+
+
+
+<!--========================================================================= -->
+<!-- begin bg-contact  ------------------------------>
+<div id="s7" class="bg-contact">
+ 
+    <div class="l-contact">
+        <div class="info">
+            <div class="cast_service serv">
+                <h3 class="info_title">Castomer Service</h3>
+                <a href="#" class="info_it">Contact</a>
+                <a href="#" class="info_it">FAQ</a>
+                <a href="#" class="info_it">Terms of payment</a>
+                <a href="#" class="info_it">Terms of sale</a>
+                <a href="#" class="info_it">Delivery terms and conditions</a>
+                <a href="#" class="info_it">Returns and Refounds</a>
+            </div>
+
+            <div class="information serv">
+                <h3 class="info_title">Information</h3>
+                <a href="#" class="info_it">Affiliate</a>
+                <a href="#" class="info_it">Cookies</a>
+                <a href="#" class="info_it">How to Shop</a>
+                <a href="#" class="info_it">About Nelly</a>
+                <a href="#" class="info_it">Investor relations</a>
+                
+            </div>
+
+            <div class="campaigns serv">
+                <h3 class="info_title">Campaigns</h3>
+                <a href="#" class="info_it">Evening dresses</a>
+                <a href="#" class="info_it">Makeup</a>
+                <a href="#" class="info_it">Fashion forward</a>
+                <a href="#" class="info_it">training clothes</a>
+                <a href="#" class="info_it">Special Occasion Dresses</a>
+                
+            </div>
+
+            <div class="Stores serv">
+                <h3 class="info_title">Stores</h3>
+                <a href="#" class="info_it">Paris</a>
+                <a href="#" class="info_it">New York</a>
+                <a href="#" class="info_it">London</a>
+                <a href="#" class="info_it">Madrid</a>
+                <a href="#" class="info_it">Tokio</a>
+                
+            </div>
+
+
+        </div> 
+
+        <div class="social_blk">
+            <h3 class="info_title">Social</h3>
+            <div class="social_foot_list">
+                
+                <a href="#" class="ir">Twitter</a>
+                <a href="#" class="ir" >Pinterest</a>
+                <a href="#" class="ir" >Facebook</a>
+                <a href="#" class="ir" >Googleplus</a>
+                <a href="#" class="ir" >Tumblr</a>
+                <a href="#" class="ir" >Vimeo</a>
+                
+            </div>
+        </div>
+        
+    </div>
+  
+
+</div>
+<!-- end bg-contact --------------------------------->
+
+<!--  ========================================================================= -->
+<!-- begin bg-footer  ------------------------------- -->
+<div id="s8" class="bg-footer">
+    
+    <div class="l-wrapper">
+        <div id="foot_menu_button"></div>
+        <div class="foot_menu_list">
+            <a href="#">Privacy &#38; Cookies</a>
+            <a href="#">Terms &#38; Conditions</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Store Directory</a>
+            <a href="#">About Us</a>
+        </div>
+        
+         <span>
+         &#169;LookShop.com<br>
+         All Right Reserved
+         </span>   
+
+    </div>
+</div>
+
+
+<!-- end bg-footer ------------------------------------->
+
+<!--=========================================================================
+
+<script>
+
+//плавная прокрутка к элементу scroll_el
+
+
+$(document).ready(function(){
+    $("#top-up1").click( function(){ // если в href начинается с # или ., то ловим клик
+        var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href
+        if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+        $('html, body').animate({ scrollTop: $("#s1").offset().top }, 1000); // анимируем скроолинг к элементу scroll_el
+        }
+        
+
+        return false; // выключаем стандартное действие
+    });
+});
+// ------------------------------------------------------------------------------
+
+
+</script>
+-->
+<!--
+<script>
+
+// "плавный скроллинг страницы " скролит шагами step со скоростью speed
+$(function () {
+  $.srSmoothscroll({
+    // defaults
+    step: 200,
+    speed: 300,
+    ease: 'swing',
+    target: $('body'),
+    container: $(window)
+  })
+})
+
+</script>
+
+<script>
+// скроллинг шагами от секции к секции с возможностью подключения пагинаторов
+// требует onepage_scroll и своего css
+//
+      $(document).ready(function(){
+          $(".main").onepage_scroll({
+            sectionContainer: "section",
+            animationTime: 600,
+            responsiveFallback: 320,
+            loop: true
+          });
+      });
+
+</script>
+-->
+<script type="text/javascript" src="js/lib/jquery.easing.1.3.js"></script>
+        <!-- the jScrollPane script -->
+<script type="text/javascript" src="js/lib/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/lib/jquery.contentcarousel.js"></script>
+
+<script type="text/javascript" src="js/common.js"></script>
+
+ <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.6/prefixfree.min.js"></script>
+ -->
+	
+</body>
+</html>

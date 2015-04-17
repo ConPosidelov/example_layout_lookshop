@@ -1,0 +1,244 @@
+
+/* ======= contact ======================================================= */
+
+.bg-contact { 
+    display: none;
+    @extend %bg-width;
+    .l-contact { 
+        @extend %inner-width;
+       
+    }
+}
+
+
+@media only screen and (min-width: $phone_brake){
+    .bg-contact { 
+        display: block;
+        height: 360px;
+        background-color: #cfcece;
+        .l-contact { 
+            
+            .info {
+                width: 56%;
+                height: 100%;
+                float: left;
+                .serv{
+                    margin-top: 30px;
+                    padding-left: 10px;
+                    
+                    height: 150px;
+                    .info_title { 
+                        line-height: 1;
+                        height: 16px;
+                        font-size: 16px;
+                        color: $black-color;
+                        margin-bottom: 20px;
+                    }
+
+                    .info_it { 
+                        display: block;
+                        height: 18px;
+                        line-height: 1;
+                        font-size: 12px;
+                        color: $gray-color;
+                        text-decoration: none;
+                        transition: 0.6s ease-out;
+                        &:hover{
+                            color: $red-color;
+                            transition: 0.6s ease-out;
+                            font-size: 14px;
+                        }
+
+                    }
+                } 
+
+                .cast_service { 
+                    float: left;
+                    width: 60%;
+                }
+
+                .information { 
+                    float: right;
+                    width: 40%;
+                }
+
+                .campaigns { 
+                    float: left;
+                    width: 60%;
+                }
+
+                .Stores { 
+                    float: right;
+                    width: 40%;
+                }
+            }
+
+            .social_blk { 
+                width: 44%;
+                height: 100%;
+                float: right;
+                margin-top: 30px;
+                .info_title { 
+                    line-height: 1;
+                    height: 16px;
+                    font-size: 16px;
+                    color: $black-color;
+                    margin-bottom: 20px;
+                }
+                .social_foot_list{
+                    display: block;
+                    width: 138px;
+                    height: 100%;
+                    float: left;
+                    a { 
+                        display: block;
+                        width: 36px;
+                        height: 36px;
+                        float: left;
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                        transition: 0.6s ease-out;
+                    }
+                     @for $i from 1 through 6 {
+
+                      a:nth-of-type(#{$i}){
+                            
+                           background:url('../images/social/soc#{$i}.png')#{$center};
+                           background-size: 36px;
+
+                            &:hover{
+                                background-size: 46px;
+                                transition: 0.6s ease-out;
+                            }
+                       }
+                    }
+                    a:nth-of-type(3){
+                        float: right;
+                    }
+                    a:nth-of-type(6){
+                        float: right;
+                    }
+                }
+
+                &:before{
+                    content: '';
+                    display: block;
+                    width: 110px;
+                    height: 110px;
+                    float: right;
+                    margin-right: 30px;
+                    margin-top: 20px;
+                    background:url('../images/social/secured.png')#{$center};
+                    background-size: 110px; 
+                }
+
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: $pad_brake){
+    .bg-contact { 
+        display: block;
+        height: 200px;
+        background-color: #cfcece;
+        .l-contact { 
+            
+            .info {
+                width: 71%;
+                height: 100%;
+                float: left;
+                margin-right: -20px;
+                .serv{
+                    margin-top: 30px;
+                    width: 25%;
+                    height: 100%;
+                    .info_title { 
+                        font-size: 12px;
+                        height: 14px;
+                        line-height: 14px;
+                    }
+
+                    .info_it { 
+                        font-size: 11px;
+                        line-height: 2;
+
+                        &:hover{
+                            
+                            font-size: 11px;
+                        }
+                    }
+                } 
+
+                .cast_service { 
+                    float: left;
+                    width: 31%;
+        
+                }
+
+                .information { 
+                    float: left;
+                    width: 22%;
+  
+                }
+
+                .campaigns { 
+                    float: left;
+                    width: 27%;
+      
+                }
+
+                .Stores { 
+                    float: right;
+                    width: 15%;
+                    margin-right: 4%;
+            
+                }
+            }
+
+            .social_blk { 
+                width: 29%;
+                height: 100%;
+                float: right;
+                margin-right: 20px;
+                .info_title { 
+                    font-size: 12px;
+                    height: 14px;
+                    line-height: 14px;
+                }
+
+                 .social_foot_list{
+                    a { 
+                        display: block;
+                        width: 36px;
+                        height: 36px;
+                        float: left;
+                        margin-right: 10px;
+
+                    }
+                     @for $i from 1 through 6 {
+
+                      a:nth-of-type(#{$i}){
+                            
+                           background:url('../images/social/soc#{$i}.png')#{$center};
+                           background-size: 36px; 
+                       }
+                    }
+                    a:nth-of-type(3){
+
+                    }
+                }
+
+                 &:before{
+                    width: 90px;
+                    margin-right: -10px;
+                    margin-top: 20px;
+                    background-size: 90px; 
+                }
+                    
+            }
+        }
+    }
+
+}

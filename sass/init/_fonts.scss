@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'WebHostingHub-Glyphs';
+    
+    src:url('../fonts/webhostinghub-glyphs.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    -moz-font-feature-settings: "calt=0,liga=0";
+}
+@font-face {
+    font-family: 'Wingdings 3';
+    src: url('../fonts/WINGDNG3.ttf'); 
+   }
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/bootstrap/glyphicons-halflings-regular.ttf'); 
+}
+@font-face {
+    font-family: 'Fontawesome';
+    src: url('../fonts/fontawesome-webfont.ttf'); 
+}
+
+//.icon-separator:before {
+//    content: "\e600";
+//}
+@font-face {
+    font-family: 'Myicon';
+    src:url('../fonts/my/icomoon.eot?91wny');
+    src:url('../fonts/my/icomoon.eot?#iefix91wny') format('embedded-opentype'),
+        url('../fonts/my/icomoon.woff?91wny') format('woff'),
+        url('../fonts/my/icomoon.ttf?91wny') format('truetype'),
+        url('../fonts/my/icomoon.svg?91wny#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+   

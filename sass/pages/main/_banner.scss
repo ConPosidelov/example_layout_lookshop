@@ -1,0 +1,329 @@
+
+/* ======= banner ======================================================= */
+
+.l-banner { 
+    display: none;
+    @extend %inner-width;
+    //width: $in-width_dec;
+    .banner_inner { 
+        @extend %inner_phone-width;
+        .banner_left { 
+
+        }
+
+        .banner_right { 
+
+            .right_top { 
+
+            }
+
+            .right_down { 
+
+                .best_sellers { 
+
+                }
+
+                .fall_leather { 
+
+                    .button_shop_small { 
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: $phone_brake){
+
+
+    .l-banner { 
+        display: block;
+        //@extend %inner-width;
+        //height: 694px;
+        margin-top: 30px;
+        .banner_inner {
+
+           // @extend %inner_phone-width; 
+            height: 100%;
+            .banner_left { 
+                width: 50%;
+                height: 100%;
+                float: left;
+                position: relative;
+                z-index: 1;
+                &:before{
+                    content: '';
+                    display: block;
+                    width: 50%;
+                    height: 70%;
+                    position: absolute;
+                    left: 45%;
+                    top: 15%;
+                     background: url('../images/banner/best_outfits.png')transparent center center no-repeat;
+                     background-size: 90%;
+                     z-index: 2;
+
+                }
+            }
+
+            .banner_right { 
+                width: 50%;
+                height: 100%;
+                float: right;
+                .right_top { 
+                    width: 100%;
+                    position: relative;
+                    z-index: 1;
+
+                    .summer_button{
+                        content: '';
+                        display: block;
+                        width: 25%;
+                        height: 80%;
+                        position: absolute;
+                        left: 6%;
+                        top: 8%;
+                         background: url('../images/banner/collection.png')transparent center center no-repeat;
+                         background-size: 100%;
+                         z-index: 2;
+                        transition: 0.6s ease-out;
+                        &:hover{
+                           transition: 0.6s ease-out;
+                           background-size: 100%;
+                           width: 28%;
+                           height: 85%;
+                        }
+                    }
+
+
+
+                }
+
+                .right_down { 
+                    width: 100%;
+                    height: 50%;
+                    .best_sellers { 
+                        width: 50%;
+                        height: 100%;
+                        float: left;
+                        position: relative;
+                        z-index: 1;
+
+                        .best_button{
+                            content: '';
+                            display: block;
+                            width: 75%;
+                            height: 18%;
+                            position: absolute;
+                            left: 8%;
+                            top: 73%;
+                            background: url('../images/banner/best-sellers_text.png')transparent center center no-repeat;
+                             background-size: 95%;
+                            z-index: 2;
+                            transition: 0.6s ease-out;
+                            &:after{
+                                display: block;
+                                float: right;
+                                margin-right: -10%;
+                                margin-top: 2%;
+                                content: '';
+                                width: 10%;
+                                height: 70%;
+                                background: url('../images/banner/pixel_arrows_r2.png')transparent center center no-repeat;
+                                background-size: 40%;
+                            }
+
+                            &:hover{
+                                transition: 0.6s ease-out;
+                                background-size: 100%;
+                            }
+
+
+                        }
+                    }
+
+                    .fall_leather { 
+                        width: 50%;
+                        height: 100%;
+                        float: right;
+                        position: relative;
+                        z-index: 1;
+
+                         &:before{
+                            content: '';
+                            display: block;
+                            width: 55%;
+                            height: 40%;
+                            position: absolute;
+                            left: 5%;
+                            top: 23%;
+                            z-index: 2;
+                            background: url('../images/banner/fall-leather_text.png')transparent center center no-repeat;
+                             background-size: 91%;
+                            
+                            
+
+
+                        }
+
+                        .button_shop_small { 
+                            display: block;
+                            width: 40%;
+                            height: 25px;
+                            background-color: $green-color;
+                            position: absolute;
+                            left: 12%;
+                            top: 70%;
+                            z-index: 2;
+
+                            text-transform: uppercase;
+                            font-size: 8px;
+                            line-height: 25px;
+                            padding-left: 3%;
+                             transition: 0.6s ease-out;
+                            &:after{
+                                content: '\f0da';
+                                display: block;
+                                float: right;
+                                width: 5%;
+                                height: 15px;
+                                font-family: $icon-font4;
+                                font-size: 9px;
+                                margin-right: 10%;
+
+                            }
+
+                             &:hover{
+                                text-decoration: none;
+                                color: $red-color;
+                                 transition: 0.6s ease-out;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (min-width: $pad_brake){
+
+    .l-banner { 
+        //height: 750px;
+        margin-top: 40px;
+        .banner_inner { 
+
+            .banner_left { 
+
+            }
+
+            .banner_right { 
+
+                .right_top { 
+
+                }
+
+                .right_down { 
+
+                    .best_sellers { 
+
+                    }
+
+                    .fall_leather { 
+
+                        .button_shop_small { 
+                            height: 25px;
+                            font-size: 9px;
+                            line-height: 27px;
+                            padding-left: 3%;
+
+                            &:after{
+                                width: 5%;
+                                height: 15px;
+                                font-size: 9px;
+                                line-height: 25px;
+                                margin-right: 10%;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 830px){
+    .l-banner { 
+        margin-top: 40px;
+        .banner_inner { 
+            .banner_right { 
+                .right_down { 
+                    .fall_leather { 
+
+                        .button_shop_small { 
+                            height: 28px;
+                            font-size: 10px;
+                            line-height: 30px;
+                            padding-left: 3%;
+
+                            &:after{
+                                width: 5%;
+                                height: 15px;
+                                font-size: 10px;
+                                line-height: 28px;
+                                margin-right: 12%;
+                            }
+
+
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+
+@media only screen and (min-width: 910px){
+    .l-banner { 
+        margin-top: 40px;
+        .banner_inner { 
+            .banner_right { 
+                .right_down { 
+                    .fall_leather { 
+
+                        .button_shop_small { 
+                            height: 30px;
+                            font-size: 11px;
+                            line-height: 30px;
+                            padding-left: 5%;
+
+                            &:after{
+                                width: 5%;
+                                height: 15px;
+                                font-size: 10px;
+                                line-height: 30px;
+                                margin-right: 13%;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

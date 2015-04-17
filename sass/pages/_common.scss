@@ -1,0 +1,102 @@
+/* ======= контейнер бэкграунда =========================================== */
+%bg-width{
+    max-width: $bg-width;
+    min-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+%inner-width{
+    max-width: $in-width_dec;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+%inner_phone-width{
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* ======= ================= */
+%absolute_wrap{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+
+
+%transition_scale{
+    transition: 0.4s ease-out;
+    &:hover{
+        -webkit-transform: scale(1.2);
+         transform: scale(1.2);
+        transition: 0.4s ease-out;
+    }
+    
+    // @extend %transition_scale_h;  устанавливает транзишен увеличения элемента
+}
+
+%transition_matrix60{
+    transition: 0.4s ease-out;
+    &:hover{
+        -webkit-transform: matrix(1.5, 0, 0, 1.5, 60, 0);
+         transform: matrix(1.5, 0, 0, 1.5, 60, 0);
+        
+        transition: 0.4s ease-out;
+
+    }
+    
+    // @extend %transition_translateX;  устанавливает транзишен увеличения элемента
+}
+
+//@mixin matrix($scaleX, $scaleY, $translateX, $transition){
+//     transition: $transition ease-out;
+//    &:hover{
+//        -webkit-transform: matrix($scaleX, 0, 0, $scaleY, $translateX, 0);
+ //        transform: matrix($scaleX, 0, 0, $scaleY, $translateX, 0);
+//         transition: $transition ease-out;
+ //   }
+//  @include matrix(1.5, 1.5, 60, 0.4s);
+//}
+
+
+
+
+
+.width_monitor{
+    float: left;
+       
+}
+.phone_monitor{
+    float: left;
+}
+@media only screen and (min-width: $phone_brake){
+    .width_monitor{
+        float: left;
+        
+    }
+    .phone_monitor{
+        float: none;
+    }
+}
+@media only screen and (min-width: $pad_brake){
+
+    .width_monitor{
+        float: none;
+    }
+    .phone_monitor{
+        float: none;
+    }
+
+}
+
+.bg-content{
+    @extend %bg-width;
+}
+

@@ -1,0 +1,132 @@
+
+/********************************************************
+ susy Variables
+********************************************************/
+
+$susy: (   
+    flow: ltr, // сменить дефолтное навправление колонок
+    math: fluid, // static для неадаптивных сайтов    
+    output: float, // используйте outside для исправлениях некоторых багов   
+    gutter-position: after, // возможны  before и inside   
+    container: 960px, // максимальную ширину в любых единицах, например, 60em   
+    container-position: center, // если вы хотите сделать не по центру, то можно использовать left и right   
+    columns: 12, // количество колонок   
+    gutters: .1428, // ширина пробельчика для каждой колонки - множитель к ширине колонки  
+    column-width: false, // ширина колонки задается только при math: static   
+    global-box-sizing: border-box, // можно задать border-box, но иногда проще использовать border-box миксин из компаса   
+    last-flow: to, // последний элемент в ряду флоатится вправо, можно сменить   
+    debug: ( 
+        image: show, // варианты: show | hide | show-columns | show-baseline для показа всех вариантов колонок и линеечек     
+        color: rgba(#66f, .45), // менять цвет у колонок     
+        output: background, // есть еще вариант overlay, в котором колонки показываются только при наведении     
+        toggle: top right, // положение переключателя для показа оверлея   
+    ),   
+    use-custom: ( // для каждого из них если включить true будут использоваться миксины из Compass или ваши собственные)     
+        background-image: false, // возможность использовать свой миксин background-image     
+        background-options: false, // разные background миксины     
+        box-sizing: true, // свой миксин box-sizing     
+        clearfix: false, // свой миксин clearfix     
+        rem: true,   
+    )
+);
+
+
+/*******************************************************/
+/* color Variables */
+/*******************************************************/
+/* colors*/
+$black-color: #000000;
+$wite-color: #ffffff;
+$cream-color: #e8e1d7;
+$red-color: #fd926d;
+$gray-color: #838383;
+$gray1-color: #6b6b6b;
+$green-color: #4fafa0;
+$brown-color: #78645d;
+
+
+$cream_lite-color: #e8e5da;
+$gray_lite1old-color: #ededed;
+$gray_lite1-color: #e4e3e3;
+$gray_lite2-color: #f7f7f7;
+$gray_lite3-color: #f3f3f3;
+$red-hover_color: #dd6b44;
+
+$red-phon1_color: #f4845d;
+$red-phon2_color: $red-color;
+$red-phon3_color: $red-hover_color;
+
+
+/*text colors*/
+$txt-wite-color: $wite-color;
+$txt-black-color: $black-color;
+$txt-brown-color: $brown-color;
+
+$txt-body-color: $gray-color;
+
+
+/*icon colors*/
+$icon-color1: $gray-color;
+
+/*******************************************************/
+/* BG Variables */
+/*******************************************************/
+
+
+$center: "transparent center center no-repeat";
+$bg-slider_cream: "#e8e1d7 center center no-repeat";
+$bg-wite: "#ffffff center center no-repeat";
+$bg-black: "#000000 center center no-repeat";
+$bg-blue-hover: "#63a1ca center center no-repeat";
+
+$bg-header:"url('../images/bg/header.jpg') transparent center center no-repeat";
+
+$bg-portfolio:"url('../images/bg/portfolio.jpg') transparent center center no-repeat";
+
+$bg-offices:"url('../images/bg/offices.jpg') transparent center center no-repeat";
+
+$bg-contact:"url('../images/bg/contact.jpg') transparent center center no-repeat";
+
+
+
+
+
+/********************************************************
+ Typography Variables
+********************************************************/
+$body-font:"Arial";
+//$serif-font: "Karla";
+$heading-font: $body-font;
+$h1-font1: "HelveticaNeueLTStd";
+$h1-font2: "LuxuryRoyaleJF";    
+
+$date-font:"Arial";
+
+
+//$icon-font1:"Wingdings 3";
+//$icon-font2:"Glyphicons Halflings";
+//$icon-font3:"WebHostingHub-Glyphs";
+$icon-font4:"Fontawesome";
+$icon-font5:"Myicon";
+
+
+/********************************************************
+ Layouts Variables
+********************************************************/
+$bg-width: 1200px;
+$in-width_dec: 960px;
+
+$in-width_pad: 768px;
+$in-width_phon: 640px;
+$main-max-width: $in-width_dec;
+
+$phone_brake: 656px;
+//$phone_brake: 640px;
+$pad_brake: 768px;
+
+/********************************************************
+ Figure Variables
+********************************************************/
+
+
+
